@@ -247,11 +247,7 @@ export default function ContactSection() {
               onChange={handleInputChange}
             />
 
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
-              onChange={onRecaptchaChange}
-            />
+
 
             <button disabled={isSubmitting}>
               {isSubmitting ? "Sending..." : "Send"}
